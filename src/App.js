@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+import macbookImage from './macbook.jpg';
+import iphoneImage from './iphone.jpg';
+import ipadImage from './ipad.jpg';
 function App() {
   return (
     <div className="App">
@@ -22,23 +24,23 @@ function App() {
         <p>The home of innovation</p>
         <a href="#" className="cta">Learn More</a>
       </section>
-      <section class="featured-products">
+      <section className="featured-products">
         <h2>Featured Products</h2>
         <div className="product-grid">
           <div className="product">
-            <img src="macbook.jpg" alt="MacBook"/>
+            <img src={macbookImage} alt="MacBook"/>
             <h3>MacBook Pro</h3>
             <p>Power. Moves.</p>
             <a href="#" className="cta">Buy Now</a> 
           </div>
           <div className="product">
-            <img src="iphone.jpg" alt="iPhone"/>
+            <img src={iphoneImage} alt="iPhone"/>
             <h3>iPhone 13</h3>
             <p>A15 Bionic chip. Super Retina XDR display.</p>
             <a href="#" className="cta">Buy Now</a>
           </div>
           <div className="product">
-            <img src="ipad.ipg" alt="iPad"/>
+            <img src={ipadImage} alt="iPad"/>
             <h3>iPad Air</h3>
             <p>Incredible power at an incredible value.</p>
             <a href="#" className="cta">Buy Now</a>
