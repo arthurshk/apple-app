@@ -19,6 +19,9 @@ function Layout({ children }) {
         </nav>
       </header>
       {children}
+      <footer className="footer">
+        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
