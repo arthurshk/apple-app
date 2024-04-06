@@ -4,7 +4,7 @@ function MacPage() {
   return (
     <div>
       <h2>Mac Page</h2>
-      {}
+      
     </div>
   );
 }

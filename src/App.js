@@ -3,9 +3,10 @@ import './App.css';
 import macbookImage from './macbook.jpg';
 import iphoneImage from './iphone.jpg';
 import ipadImage from './ipad.jpg';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import MacPage from './MacPage';
+import Layout from './Layout';
 import iPadPage from './iPadPage';
 
 function App() {
@@ -26,17 +27,15 @@ function App() {
             </ul>
           </nav>
         </header>
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/mac">
-            <MacPage />
-          </Route>
-          <Route path="/ipad">
-            <iPadPage />
-          </Route>
-        </Switch>
+      
+        <Layout>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/mac" element={<MacPage />} />
+          <Route path="/ipad" element={<iPadPage />} />
+        </Routes>
+      </Layout>
+      
         <section className="hero">
           <h1>Welcome to Apple</h1>
           <p>The home of innovation</p>
